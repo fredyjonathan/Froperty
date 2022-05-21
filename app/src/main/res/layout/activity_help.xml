@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/etb"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="50dp"
+            android:padding="5dp"
+            android:text="Froperty"
+            android:textAlignment="center"
+            android:fontFamily="@font/mont"
+            android:textColor="@color/teal_700" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/abt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:text="Butuh Bantuan?"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/mont"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="Kamu dapat menghubungi kami melalui:"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/mont"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="Telepon: 085155290787"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/mont"/>
+
+        <TextView
+            android:id="@+id/edtmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="Email: fropertyapp@gmail.com"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/mont"/>
+
+        ></LinearLayout>
+
+
+</LinearLayout>

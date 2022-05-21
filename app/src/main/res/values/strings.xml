@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Froperty</string>
+    <string name="title_activity_main_page">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Sell</string>
+    <string name="title_notifications">Account</string>
+</resources>

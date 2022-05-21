@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail">
+
+    <ImageView
+        android:id="@+id/dtimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy"/>
+
+    <TextView
+        android:id="@+id/dttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="36dp"
+        android:fontFamily="@font/mont"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/dtimg"/>
+
+    <TextView
+        android:id="@+id/dtharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp 999999999"
+        android:textSize="20dp"
+        android:fontFamily="@font/mont"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/dttitle"/>
+
+    <TextView
+        android:id="@+id/dttxt"
+        android:textColor="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/mont"
+        android:layout_margin="30dp"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/dtharga"/>
+
+    <TextView
+        android:id="@+id/dtseller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Penjual: Fredy Jonathan"
+        android:textSize="18dp"
+        android:fontFamily="@font/mont"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:background="@drawable/etb"
+        app:layout_constraintTop_toBottomOf="@id/dttxt"/>
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:background="@drawable/etb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dtseller"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dtalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat: JL Test 1"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtseller"/>
+
+        <TextView
+            android:id="@+id/dtprov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Provinsi: Jawa Barat"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtalamat"/>
+
+        <TextView
+            android:id="@+id/dtkota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kota: Kabupaten Bekasi"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtprov"/>
+
+        <TextView
+            android:id="@+id/dtkeca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kecamatan: Cikarang Utara"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtkota"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dtopsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opsi: Jual"
+        android:textSize="18dp"
+        android:fontFamily="@font/mont"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/etb"
+        app:layout_constraintTop_toBottomOf="@id/ly1"/>
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:background="@drawable/etb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dtopsi"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dtpanjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panjang: 20 M"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtopsi"/>
+
+        <TextView
+            android:id="@+id/dtlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lebar: 10 M"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtpanjang"/>
+
+        <TextView
+            android:id="@+id/dtluastanah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luas Tanah: 200 M"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtlebar"/>
+
+        <TextView
+            android:id="@+id/dtluasbangunan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Luas Bangungan: 180 M"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtluastanah"/>
+
+        <TextView
+            android:id="@+id/dtlantai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lantai: 2"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtluasbangunan"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly3"
+        android:background="@drawable/etb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ly2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dtbedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamar Tidur: 3"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/ly3"/>
+
+        <TextView
+            android:id="@+id/dtbathroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamar Mandi: 4"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtbedroom"/>
+
+        <TextView
+            android:id="@+id/dtinterior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interior: Ada"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtbathroom"/>
+
+        <TextView
+            android:id="@+id/dthalaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Halaman: Ada"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtinterior"/>
+
+        <TextView
+            android:id="@+id/dtparkir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garasi: Ada"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dthalaman"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly4"
+        android:background="@drawable/etb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ly3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dtlistrik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listrik: 1600"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtparkir"/>
+
+        <TextView
+            android:id="@+id/dtair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Air: PAM"
+            android:textSize="18dp"
+            android:fontFamily="@font/mont"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dtlistrik"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dtsertifikat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sertifikat: Sertifikat Hak Milik"
+        android:textSize="18dp"
+        android:fontFamily="@font/mont"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/etb"
+        app:layout_constraintTop_toBottomOf="@id/ly4"/>
+
+    <TextView
+        android:id="@+id/dttxt2"
+        android:textColor="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catatan"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/mont"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/dtsertifikat"/>
+
+    <TextView
+        android:id="@+id/dtketerangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Letak Stratefis, Dekat dengan pusat kota"
+        android:textSize="18dp"
+        android:fontFamily="@font/mont"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/etb"
+        app:layout_constraintTop_toBottomOf="@id/dttxt2"/>
+
+    <Button
+        android:id="@+id/dtkontak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dtketerangan"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="60dp"
+        android:paddingLeft="60dp"
+        android:background="@drawable/mybutton"
+        android:text="Kontak Penjual"
+        android:textSize="20dp"
+        android:fontFamily="@font/mont"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mont"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/dtkontak"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

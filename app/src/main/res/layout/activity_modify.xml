@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.modify">
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:text="Ubah Properti"
+        android:fontFamily="@font/mont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/opsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/txt"/>
+
+
+    <TextView
+        android:id="@+id/txnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Nama Properti"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/opsi"/>
+
+    <EditText
+        android:id="@+id/etnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/txnama"/>
+
+    <TextView
+        android:id="@+id/txalamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Alamat"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etnama"/>
+
+    <EditText
+        android:id="@+id/etalamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/txalamat"/>
+
+    <TextView
+        android:id="@+id/txprov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Provinsi"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etalamat"/>
+
+    <Spinner
+        android:id="@+id/provspin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="8dp"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txprov"/>
+
+    <TextView
+        android:id="@+id/txkota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Kota/Kabupaten"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/provspin"/>
+
+    <Spinner
+        android:id="@+id/kotaspin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="8dp"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txkota"/>
+
+    <TextView
+        android:id="@+id/txkeca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Kecamatan"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/kotaspin"/>
+
+    <Spinner
+        android:id="@+id/kecaspin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="8dp"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/txkeca"/>
+
+    <TextView
+        android:id="@+id/txharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Harga"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/kecaspin"/>
+
+    <EditText
+        android:id="@+id/etharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/txharga"/>
+
+    <TextView
+        android:id="@+id/txkontak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Telepon / Whatsapp"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etharga"/>
+
+    <EditText
+        android:id="@+id/etkontak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/txkontak"/>
+
+
+    <RadioGroup
+        android:id="@+id/txopsi"
+        android:checkedButton="@id/jual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/etkontak">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opsi: "
+            android:textSize="25dp"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/jual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont"
+            android:text="Jual" />
+
+        <RadioButton
+            android:id="@+id/sewa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont"
+            android:text="Sewa" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txpanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Panjang"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/txopsi"/>
+
+    <EditText
+        android:id="@+id/etpanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/txpanjang"/>
+
+    <TextView
+        android:id="@+id/txlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Lebar "
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etpanjang"/>
+
+    <EditText
+        android:id="@+id/etlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:inputType="number"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/txlebar"/>
+
+    <TextView
+        android:id="@+id/txluastanah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Luas Tanah"
+        android:fontFamily="@font/mont"
+        android:visibility="gone"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etlebar"/>
+
+    <EditText
+        android:id="@+id/etluastanah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txluastanah"/>
+
+    <TextView
+        android:id="@+id/txluasbangunan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Luas Bangunan"
+        android:fontFamily="@font/mont"
+        android:visibility="gone"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etluastanah"/>
+
+    <EditText
+        android:id="@+id/etluasbangunan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txluasbangunan"/>
+
+    <TextView
+        android:id="@+id/txlantai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Lantai"
+        android:fontFamily="@font/mont"
+        android:visibility="gone"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etluasbangunan"/>
+
+    <EditText
+        android:id="@+id/etlantai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txlantai"/>
+
+    <TextView
+        android:id="@+id/txbedroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Jumlah Kamar Tidur"
+        android:fontFamily="@font/mont"
+        android:visibility="gone"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etlantai"/>
+
+    <EditText
+        android:id="@+id/etbedroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txbedroom"/>
+
+    <TextView
+        android:id="@+id/txbathroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Jumlah Kamar Mandi"
+        android:fontFamily="@font/mont"
+        android:visibility="gone"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/etbedroom"/>
+
+    <EditText
+        android:id="@+id/etbathroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txbathroom"/>
+
+    <RadioGroup
+        android:id="@+id/interior"
+        android:checkedButton="@id/int_ada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/etbathroom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interior: "
+            android:textSize="25dp"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/int_ada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ada"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/int_tidak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tidak"
+            android:fontFamily="@font/mont"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/halaman"
+        android:checkedButton="@id/hal_ada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/interior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Halaman / Balkon: "
+            android:textSize="25dp"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/hal_ada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ada"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/hal_tidak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tidak"
+            android:fontFamily="@font/mont"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/parkir"
+        android:checkedButton="@id/par_ada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/halaman">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garasi: "
+            android:textSize="25dp"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/par_ada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ada"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/par_tidak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tidak"
+            android:fontFamily="@font/mont"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txlistrik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Listrik"
+        android:fontFamily="@font/mont"
+        android:visibility="gone"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/parkir"/>
+
+    <EditText
+        android:id="@+id/etlistrik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txlistrik"/>
+
+    <RadioGroup
+        android:id="@+id/air"
+        android:checkedButton="@id/pam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/etlistrik">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Air: "
+            android:textSize="25dp"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/pam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAM"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/sumurtanah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sumur"
+            android:fontFamily="@font/mont"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/sertifikat"
+        android:checkedButton="@id/shm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@id/air">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Sertifikat: "
+            android:textSize="25dp"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/shm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sertifikat Hak Milik"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/shgb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sertifikat Hak Guna Bangunan"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/stg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sertifikat Tanah Girik"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/sbp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sertifikat Belum Pecah"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/ajb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Akta Jual Beli"
+            android:fontFamily="@font/mont"/>
+
+        <RadioButton
+            android:id="@+id/ppjb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perjanjian Pengikatan Jual Beli"
+            android:fontFamily="@font/mont"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txketerangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:text="Informasi Tambahan"
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/sertifikat"/>
+
+    <EditText
+        android:id="@+id/etketerangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/txketerangan"/>
+
+    <Button
+        android:id="@+id/btnubah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:text="Ubah"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/mont"
+        app:layout_constraintTop_toBottomOf="@id/etketerangan"/>
+
+    <TextView
+        android:id="@+id/ant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="45dp"
+        android:text=""
+        android:fontFamily="@font/mont"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/btnpasarkan"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

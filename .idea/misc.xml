@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/activity_list.xml" value="0.1762917933130699" />
+        <entry key="..\:/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/activity_main_page.xml" value="0.3625" />
+        <entry key="..\:/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/fragment_home.xml" value="0.14918946301925026" />
+        <entry key="..\:/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/grid.xml" value="0.22056159420289856" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/activity_detail.xml" value="0.11296296296296296" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/activity_list.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/activity_main.xml" value="0.360054347826087" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/activity_main_page.xml" value="0.360054347826087" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/activity_register.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/fragment_home.xml" value="0.360054347826087" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/grid.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/item.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/listcustom.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/main_activity.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/fredy/OneDrive/Dokumen/BINUS/Project/Semester 3/Project ASG/SQL PROJECT/App/app/src/main/res/layout/main_fragment.xml" value="0.2595108695652174" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

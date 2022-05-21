@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.way2findhome" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ome"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ome"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Way2FindHome" >
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity android:name=".ui.modify" />
+        <activity android:name=".ui.Demodify" />
+        <activity android:name=".detail" />
+        <activity android:name=".list" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Help" />
+        <activity android:name=".Favorite" />
+        <activity android:name=".Pemasaran" />
+        <activity
+            android:name=".MainPage"
+            android:label="@string/title_activity_main_page" />
+        <activity android:name=".register" />
+        <activity android:name=".login" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pop"
+            android:theme="@style/CustomTheme" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
